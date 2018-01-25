@@ -1,5 +1,5 @@
 ##########################
-# intall docker
+# install docker
 ##########################
 
 sudo apt-get install apt-transport-https ca-certificates
@@ -13,10 +13,11 @@ sudo apt-get install docker-engine
 sudo service docker start
 sudo groupadd docker
 sudo usermod -aG docker $USER
+newgrp docker
 
 
 ##########################
-# intall docker-compose
+# install docker-compose
 ##########################
 
 curl -L "https://github.com/docker/compose/releases/download/1.8.1/docker-compose-$(uname -s)-$(uname -m)" > $DOTFILES/bin/docker-compose
